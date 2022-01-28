@@ -2,4 +2,4 @@
 
 PayCore PatikaDev Project 
 
-![](2.jpg
+![](2.jpg)
