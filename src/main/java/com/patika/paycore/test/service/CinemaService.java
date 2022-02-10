@@ -9,7 +9,7 @@ public interface CinemaService {
     List<Cinema> getAllCinemas();
     Cinema getCinema(Integer id);
     boolean addCinema( Cinema cinema);
-    Cinema updateCinema(String name, Cinema cinema);
+    Cinema updateCinema(Cinema cinema);
     boolean deleteCinema(Integer id);
 
 

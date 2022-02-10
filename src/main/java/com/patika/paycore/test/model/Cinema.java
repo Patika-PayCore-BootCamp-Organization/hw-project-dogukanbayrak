@@ -1,17 +1,24 @@
 package com.patika.paycore.test.model;
 
-import java.io.Serializable;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+@Entity
+@Table
 public class Cinema  {
 
-    private String name;
 
-    public Cinema() {
-    }
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
 
-    public Cinema(String name) {        this.name = name;    }
+        private String name;
 
-    public String getName() {        return name;    }
-
-    public void setName(String name) {        this.name = name;    }
 }
